@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
 // test
 Route::get('super-admin/login', function () { return view('super-admin.login')->with(['errors_a'=>[]]); })->name('login');
 Route::post('/super-admin/authenticate', "superAdmin\pagesController@postLogin");
